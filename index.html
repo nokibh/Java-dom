@@ -150,7 +150,7 @@
     <!-- ph paribahan -->
     <!-- p.h paribahan section -->
     <section class="bg-paribahan-bg">
-      <div class="container mx-auto py-8">
+      <div id="ticket" class="container mx-auto py-8">
         <div class="text-center">
           <h1 class="font-railway-700 text-3xl font-bold">P.H Paribahan</h1>
           <p class="text-inter-400 text-lg text-gray-600 font-normal py-6">
@@ -175,7 +175,7 @@
                 </div>
                 <div class="text-end">
                   <a class="btn  text-xl text-button-bus bg-button-bus-background "><img src="/images/seat-green.png"
-                      alt="">40 Seats left</a>
+                      alt=""><span id="seat-count">8 Seats left</span></a>
                 </div>
               </div>
               <!-- greenline content -->
@@ -201,7 +201,7 @@
             <img class="" src="/images/info-devider.png" alt="">
           </div>
           <!-- bus per seat price section -->
-          <div class="grid col-span-2 my-auto">
+          <div id="ticket-tk" class="grid col-span-2 my-auto">
             <div class="">
               <img class="pl-4" src="/images/fare.png" alt="">
               <h1 class="text-xl font-bold">550 Taka</h1>
@@ -244,94 +244,23 @@
               <div class="grid grid-cols-2 gap-6">
                 <div class="flex gap-8 items-center">
                   <p class="text-base">A</p>
-                  <button class="btn py-2 px-12 h-max ">A1</button>
-                  <button class="btn py-2 px-12 h-max ">A2</button>
+                  <button class="green-btn btn py-2 px-12 h-max ">A1</button>
+                  <button class="green-btn btn py-2 px-12 h-max ">A2</button>
                 </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">A3</button>
-                  <button class="btn py-2 px-12 h-max ">A4</button>
+                <div class=" flex gap-4 items-center justify-end">
+                  <button class="green-btn btn  py-2 px-12 h-max ">A3</button>
+                  <button class="green-btn btn py-2 px-12 h-max ">A4</button>
                 </div>
                 <div class="flex gap-8 items-center">
                   <p>B</p>
-                  <button class="btn py-2 px-12 h-max ">B1</button>
-                  <button class="btn py-2 px-12 h-max ">B2</button>
+                  <button class="green-btn btn py-2 px-12 h-max ">B1</button>
+                  <button class="green-btn btn  py-2 px-12 h-max ">B2</button>
                 </div>
                 <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">B3</button>
-                  <button class="btn py-2 px-12 h-max ">B4</button>
+                  <button class="green-btn btn py-2 px-12 h-max ">B3</button>
+                  <button class="green-btn btn py-2 px-12 h-max ">B4</button>
                 </div>
-                <div class="flex gap-8 items-center">
-                  <p>C</p>
-                  <button class="btn py-2 px-12 h-max ">C1</button>
-                  <button class="btn py-2 px-12 h-max ">C2</button>
-                </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">C3</button>
-                  <button class="btn py-2 px-12 h-max ">C4</button>
-                </div>
-                <div class="flex gap-8 items-center">
-                  <p>D</p>
-                  <button class="btn py-2 px-12 h-max ">D1</button>
-                  <button class="btn py-2 px-12 h-max ">D2</button>
-                </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">D3</button>
-                  <button class="btn py-2 px-12 h-max ">D4</button>
-                </div>
-                <div class="flex gap-8 items-center">
-                  <p>E</p>
-                  <button class="btn py-2 px-12 h-max ">E1</button>
-                  <button class="btn py-2 px-12 h-max ">E2</button>
-                </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">E3</button>
-                  <button class="btn py-2 px-12 h-max ">E4</button>
-                </div>
-                <div class="flex gap-8 items-center">
-                  <p class="">F</p>
-                  <button class="btn py-2 px-12 h-max ">F1</button>
-                  <button class="btn py-2 px-12 h-max ">F2</button>
-                </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">F3</button>
-                  <button class="btn py-2 px-12 h-max ">F4</button>
-                </div>
-                <div class="flex gap-8 items-center">
-                  <p class="text-base">G</p>
-                  <button class="btn py-2 px-12 h-max ">G1</button>
-                  <button class="btn py-2 px-12 h-max ">G2</button>
-                </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">G3</button>
-                  <button class="btn py-2 px-12 h-max ">G4</button>
-                </div>
-                <div class="flex gap-8 items-center">
-                  <p>H</p>
-                  <button class="btn py-2 px-12 h-max ">H1</button>
-                  <button class="btn py-2 px-12 h-max ">H2</button>
-                </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">H3</button>
-                  <button class="btn py-2 px-12 h-max ">H4</button>
-                </div>
-                <div class="flex gap-8 items-center">
-                  <p>I</p>
-                  <button class="btn py-2 px-12 h-max ">I1</button>
-                  <button class="btn py-2 px-12 h-max ">I2</button>
-                </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">I3</button>
-                  <button class="btn py-2 px-12 h-max ">I4</button>
-                </div>
-                <div class="flex gap-8 items-center">
-                  <p>J</p>
-                  <button class="btn py-2 px-12 h-max ">J1</button>
-                  <button class="btn py-2 px-12 h-max ">J2</button>
-                </div>
-                <div class="flex gap-4 items-center justify-end">
-                  <button class="btn py-2 px-12 h-max ">J3</button>
-                  <button class="btn py-2 px-12 h-max ">J4</button>
-                </div>
+                          
               </div>
             </div>
           </div>
@@ -377,22 +306,7 @@
                 </div>
               </div>
               <!-- form -->
-              <form class="font-inter-600 ">
-                <div>
-                  <span class="text-base font-bold py-4 block">Passenger Name*</span>
-                  <input class="border py-4 px-6 w-full rounded-xl" type="text" placeholder="Enter your name" required>
-                </div>
-                <div>
-                  <span class="text-base font-bold py-4 block">Phone Number*</span>
-                  <input class="border py-4 px-6 w-full rounded-xl" type="number" placeholder="Enter your phone number"
-                    required>
-                </div>
-                <div>
-                  <span class="text-base font-bold py-4 block">Email ID</span>
-                  <input class="border py-4 px-6 w-full rounded-xl" type="email" placeholder="Enter your email id"
-                    required>
-                </div>
-              </form>
+
               <!-- Next btn -->
               <div class="py-8">
                 <button class="font-raleway-800 text-lg text-white w-full bg-[#1DD100]  py-4 rounded-2xl ">Next</button>
