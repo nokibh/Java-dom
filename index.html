@@ -9,12 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .seat {
-
-      width: 24px;
-      height: 24px;
-      gap: 2px;
-      border: 4px solid white;
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -70,7 +67,7 @@
           features allow for a streamlined. <br>
         </p>
         <br>
-        <button class="bg-[#1DD100] font-extrabold w-32 h-14 rounded-lg">
+        <button id="buy-btn" class="bg-[#1DD100] font-extrabold w-32 h-14 rounded-lg">
           Buy Tickets
         </button>
       </div>
@@ -222,7 +219,7 @@
       <div class="container mx-auto bg-white mb-32 py-10 px-8 rounded-2xl">
         <div class="grid grid-cols-12 gap-4">
           <!-- All seat details -->
-          <div class="grid col-span-6">
+          <div id="seat-section" class="grid col-span-6">
             <div class="">
               <h2 class="font-ralway-600 text-xl font-semibold py-4">Select Your Seat</h2>
               <!-- All seats nav -->
@@ -242,13 +239,13 @@
               <hr>
               <!-- seats -->
               <div class="text-right py-8">
-                <button class="btn py-2 px-10 h-max "> <img src="/images/wheel.png" alt=""></button>
+                <button class="btn py-2 px-10 h-max "> <img src="images/Group 56.png" alt=""></button>
               </div>
               <div class="grid grid-cols-2 gap-6">
                 <div class="flex gap-8 items-center">
                   <p class="text-base">A</p>
                   <button class="btn py-2 px-12 h-max ">A1</button>
-                  <button onclick="makeGreen()" class="btn py-2 px-12 h-max ">A2</button>
+                  <button class="btn py-2 px-12 h-max ">A2</button>
                 </div>
                 <div class="flex gap-4 items-center justify-end">
                   <button class="btn py-2 px-12 h-max ">A3</button>
