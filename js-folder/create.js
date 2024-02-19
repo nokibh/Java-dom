@@ -16,8 +16,10 @@ for (const btn of allbtn) {
   btn.addEventListener('click', function (e) {
     count = count - 1;
     setInnerText('seat-count', count);
+    console.log(e.target.parentNodee);
   });
 }
+
 // ticket tk
 const tickets = document.getElementById('ticket');
 for (const ticket of tickets) {
