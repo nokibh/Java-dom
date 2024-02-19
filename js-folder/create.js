@@ -16,17 +16,23 @@ for (const btn of allbtn) {
   btn.addEventListener('click', function (e) {
     count = count - 1;
     setInnerText('seat-count', count);
-    console.log(e.target.parentNodee);
   });
 }
 
 // ticket tk
-const tickets = document.getElementById('ticket');
-for (const ticket of tickets) {
-  cons;
+const ticketClass = 'Economy';
+function ticketName() {
+  const ticket = document.getElementById('ticket-item').innerHTML;
+  const ticketElement = document.createElement('div');
+  ticket.appendChild('ticketElement');
+  console.log(ticketElement);
+  const p = document.createElement('p');
+  const p1 = document.createElement('p');
+  const p2 = document.createElement('p');
 }
 
 // funtion call
 function setInnerText(id, value) {
   document.getElementById(id).innerText = value;
+  ticketName();
 }
