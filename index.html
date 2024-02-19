@@ -218,81 +218,232 @@
 
 
     <!-- seat plan -->
-    <section class="bg-[#FFFFFF]">
-      <div>
-        <h5 class="p-3 font-extrabold">Select Your Seat</h5>
-        <hr>
-        <div class="flex gap-36 p-3">
-          <div class="flex gap-1">
-            <img src="images/seat-gray.png" alt="">
-            <p>Available</p>
-          </div>
-          <div class="flex">
-            <img src="images/seat-green-filled.png" alt="">
-            <p class="text-[#1DD100]">Selected</p>
-          </div>
-        </div>
-        <hr>
-        <div class="ml-64 justify-end">
-          <img src="images/Group 56.png" alt="">
-        </div>
-        <div class="grid grid-cols-4 gap-2">
-
-          <kbd class="kbd  w-5">A1</kbd>
-          <kbd class="kbd w-5">A2</kbd>
-          <kbd class="kbd w-5">A3</kbd>
-          <kbd class="kbd w-5">A4</kbd>
-
-          <kbd class="kbd w-5">B1</kbd>
-          <kbd class="kbd w-5">B2</kbd>
-          <kbd class="kbd w-5">B3</kbd>
-          <kbd class="kbd w-5">B4</kbd>
-        </div>
-        <div>
-          <h5>Select Your Seat</h5>
-        </div>
-        <hr>
-        <div>
-          <span>Seat</span>
-          <span>Class</span>
-          <span>Price</span>
-        </div>
-      </div>
-
-    </section>
-    <!-- footer -->
-    <section>
-      <footer class="footer p-10 bg-black text-neutral-content">
-        <aside>
-          <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-            clip-rule="evenodd" class="fill-current">
-
-          </svg>
-          <h3 class="text-white font-semibold text-2xl">P-Ticket</h3>
-          <p>P-Ticket is a digital platform to make your daily commuting better.</p>
-        </aside>
-        <nav>
-          <h6 class="font-semibold text-white ">Download our app</h6>
-          <div class="grid grid-flow-col gap-4">
-            <div class="border-2 border-solid flex w-36 h-14 gap-2">
-              <img src="images/playstore.png" alt="">
-              <div>
-                <p class="text-white">GET IT ON</p>
-                <h2 class="text-white">Google Play</h2>
+    <section class="bg-paribahan-bg py-4 ">
+      <div class="container mx-auto bg-white mb-32 py-10 px-8 rounded-2xl">
+        <div class="grid grid-cols-12 gap-4">
+          <!-- All seat details -->
+          <div class="grid col-span-6">
+            <div class="">
+              <h2 class="font-ralway-600 text-xl font-semibold py-4">Select Your Seat</h2>
+              <!-- All seats nav -->
+              <hr>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <div class="flex items-center gap-2">
+                    <img class="size-14" src="/images/seat-gray.png" alt="">
+                    <p class="font-ralway-700 text-base text-gray-500 font-bold">Available</p>
+                  </div>
+                </div>
+                <div class="flex items-center text-xl text-button-bus">
+                  <img src="/images/seat-green-filled.png" alt="">
+                  <p class="">Selected</p>
+                </div>
+              </div>
+              <hr>
+              <!-- seats -->
+              <div class="text-right py-8">
+                <button class="btn py-2 px-10 h-max "> <img src="/images/wheel.png" alt=""></button>
+              </div>
+              <div class="grid grid-cols-2 gap-6">
+                <div class="flex gap-8 items-center">
+                  <p class="text-base">A</p>
+                  <button class="btn py-2 px-12 h-max ">A1</button>
+                  <button onclick="makeGreen()" class="btn py-2 px-12 h-max ">A2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">A3</button>
+                  <button class="btn py-2 px-12 h-max ">A4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p>B</p>
+                  <button class="btn py-2 px-12 h-max ">B1</button>
+                  <button class="btn py-2 px-12 h-max ">B2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">B3</button>
+                  <button class="btn py-2 px-12 h-max ">B4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p>C</p>
+                  <button class="btn py-2 px-12 h-max ">C1</button>
+                  <button class="btn py-2 px-12 h-max ">C2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">C3</button>
+                  <button class="btn py-2 px-12 h-max ">C4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p>D</p>
+                  <button class="btn py-2 px-12 h-max ">D1</button>
+                  <button class="btn py-2 px-12 h-max ">D2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">D3</button>
+                  <button class="btn py-2 px-12 h-max ">D4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p>E</p>
+                  <button class="btn py-2 px-12 h-max ">E1</button>
+                  <button class="btn py-2 px-12 h-max ">E2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">E3</button>
+                  <button class="btn py-2 px-12 h-max ">E4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p class="">F</p>
+                  <button class="btn py-2 px-12 h-max ">F1</button>
+                  <button class="btn py-2 px-12 h-max ">F2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">F3</button>
+                  <button class="btn py-2 px-12 h-max ">F4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p class="text-base">G</p>
+                  <button class="btn py-2 px-12 h-max ">G1</button>
+                  <button class="btn py-2 px-12 h-max ">G2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">G3</button>
+                  <button class="btn py-2 px-12 h-max ">G4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p>H</p>
+                  <button class="btn py-2 px-12 h-max ">H1</button>
+                  <button class="btn py-2 px-12 h-max ">H2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">H3</button>
+                  <button class="btn py-2 px-12 h-max ">H4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p>I</p>
+                  <button class="btn py-2 px-12 h-max ">I1</button>
+                  <button class="btn py-2 px-12 h-max ">I2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">I3</button>
+                  <button class="btn py-2 px-12 h-max ">I4</button>
+                </div>
+                <div class="flex gap-8 items-center">
+                  <p>J</p>
+                  <button class="btn py-2 px-12 h-max ">J1</button>
+                  <button class="btn py-2 px-12 h-max ">J2</button>
+                </div>
+                <div class="flex gap-4 items-center justify-end">
+                  <button class="btn py-2 px-12 h-max ">J3</button>
+                  <button class="btn py-2 px-12 h-max ">J4</button>
+                </div>
               </div>
             </div>
-
           </div>
-          <hr class="">
-        </nav>
-
-      </footer>
+          <div class="grid col-span-1 border-r-2 border-gray-300 border-dashed px-2"></div>
+          <!-- seat form part -->
+          <div class="grid col-span-5">
+            <div>
+              <h2 class="font-ralway-600 text-xl font-semibold py-4">Select Your Seat</h2>
+              <hr class="border-gray-300 border-dashed">
+              <div class="bg-gray-100 p-4 rounded-xl my-6">
+                <div class="">
+                  <ul class="font-inter-500 grid grid-cols-3 justify-items-center  text-base font-semibold py-4">
+                    <div class="flex gap-2 h-min">
+                      <li>Seat</li>
+                      <button class="h-8 w-10 bg-button-bus rounded-full"></button>
+                    </div>
+                    <li>Class</li>
+                    <li>Price</li>
+                  </ul>
+                  <hr class="border-gray-400 border-dashed">
+                  <!-- ticket will add -->
+                  <div>
+                    <ul class="font-inter-500 grid grid-cols-3 justify-items-center py-2">
+                      <li>x</li>
+                    </ul>
+                  </div>
+                  <hr class=" border-gray-400 my-4">
+                  <!-- total price -->
+                  <div class="font-inter-500 flex justify-between px-14">
+                    <p class=" text-base font-bold">Total Price</p>
+                    <p class="uppercase text-base font-bold">Bdt 0</p>
+                  </div>
+                  <!-- coupon input -->
+                  <div class="px-14 py-6">
+                    <input class=" px-6 py-2 w-full rounded-lg" type="text" placeholder="Have any coupon">
+                    <button
+                      class="font-inter-600 bg-button-bus text-white px-10 py-2 rounded-lg left-3/4 bottom-10 relative">Apply</button>
+                  </div>
+                  <div class="font-inter-500 flex justify-between px-14">
+                    <p class=" text-base font-bold">Grand Total</p>
+                    <p class="uppercase text-base font-bold">Bdt 0</p>
+                  </div>
+                </div>
+              </div>
+              <!-- form -->
+              <form class="font-inter-600 ">
+                <div>
+                  <span class="text-base font-bold py-4 block">Passenger Name*</span>
+                  <input class="border py-4 px-6 w-full rounded-xl" type="text" placeholder="Enter your name" required>
+                </div>
+                <div>
+                  <span class="text-base font-bold py-4 block">Phone Number*</span>
+                  <input class="border py-4 px-6 w-full rounded-xl" type="number" placeholder="Enter your phone number"
+                    required>
+                </div>
+                <div>
+                  <span class="text-base font-bold py-4 block">Email ID</span>
+                  <input class="border py-4 px-6 w-full rounded-xl" type="email" placeholder="Enter your email id"
+                    required>
+                </div>
+              </form>
+              <!-- Next btn -->
+              <div class="py-8">
+                <button class="font-raleway-800 text-lg text-white w-full bg-[#1DD100]  py-4 rounded-2xl ">Next</button>
+              </div>
+              <div class="flex justify-around">
+                <a class="font-inter-400 text-base text-gray-600 font-normal underline cursor-pointer">Terms
+                  and Condition</a>
+                <a class="font-inter-400 text-base text-gray-600 font-normal underline cursor-pointer">Cancellation
+                  Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- footer -->
+    <footer class="bg-black">
+      <div class="container mx-auto py-16">
+        <div class="flex justify-between">
+          <div class="">
+            <h2 class="pb-6 text-white text-xl">B-Ticket</h2>
+            <p class="text-gray-400">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+          </div>
+          <div>
+            <p class="pb-6 text-white text-xl">Download our app</p>
+            <img src="images/playstore.png" alt="">
+          </div>
+        </div>
+        <hr class="border-gray-500 border-dashed my-8">
+        <div class="flex justify-between">
+          <div>
+            <p class="text-gray-400">@ rights reserved, P-Ticket services limited.2024</p>
+          </div>
+          <div class="">
+            <ul class="flex gap-8 text-white">
+              <li>Terms & condition</li>
+              <li>Return & refund policy</li>
+              <li>Privacy policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </main>
 
-
+  <script src="js-folder/create.js"></script>
 </body>
 
 </html>
